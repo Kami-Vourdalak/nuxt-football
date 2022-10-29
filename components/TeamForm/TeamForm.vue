@@ -1,23 +1,23 @@
 <template>
   <div>
     <app-text-input
-      label="Team name:"
       v-model="name"
+      label="Team name:"
       :error="nameError"
-      @input="validateName"
       :data-cy="'team-form-name-' + dataCy"
+      @input="validateName"
     />
     <app-text-input
-      label="Team logo url:"
       v-model="img"
+      label="Team logo url:"
       :error="imgError"
-      @input="validateUrl"
       :data-cy="'team-form-img-' + dataCy"
+      @input="validateUrl"
     />
     <app-button
-      @click="handleSave"
       :disabled="isSaveDisabled"
       :data-cy="'team-form-save-' + dataCy"
+      @click="handleSave"
     >
       Save
     </app-button>
@@ -25,62 +25,62 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import AppTextInput from "@/components/AppTextInput/AppTextInput.vue";
-import AppButton from "~/components/app-button/AppButton.vue";
+import { defineComponent } from 'vue'
+import AppTextInput from '@/components/AppTextInput/AppTextInput.vue'
+import AppButton from '~/components/app-button/AppButton.vue'
 
 export default defineComponent({
-  name: "TeamForm",
+  name: 'TeamForm',
   components: { AppButton, AppTextInput },
   props: {
     teamValues: {
       type: Object,
       required: false,
-      default: () => ({ name: "", img: "" }),
+      default: () => ({ name: '', img: '' })
     },
-    dataCy: { type: String, required: false, default: "" },
+    dataCy: { type: String, required: false, default: '' }
   },
   emits: {
-    "update:modelValue": Object,
-    onSave: Object,
+    'update:modelValue': Object,
+    onSave: Object
   },
-  data() {
+  data () {
     return {
       name: this.teamValues.name,
       img: this.teamValues.img,
-      nameError: "",
-      imgError: "",
-    };
+      nameError: '',
+      imgError: ''
+    }
   },
   computed: {
-    isSaveDisabled() {
-      return !this.img || !this.name || !!this.imgError || !!this.nameError;
-    },
+    isSaveDisabled () {
+      return !this.img || !this.name || !!this.imgError || !!this.nameError
+    }
   },
   methods: {
-    handleSave() {
-      this.validateName();
-      this.validateUrl();
-      if (this.isSaveDisabled) return;
-      this.$emit("onSave", { name: this.name, img: this.img });
+    handleSave () {
+      this.validateName()
+      this.validateUrl()
+      if (this.isSaveDisabled) { return }
+      this.$emit('onSave', { name: this.name, img: this.img })
     },
-    validateName() {
-      if (this.name === "") {
-        return (this.nameError = "Required");
+    validateName () {
+      if (this.name === '') {
+        return (this.nameError = 'Required')
       }
-      return (this.nameError = "");
+      return (this.nameError = '')
     },
-    validateUrl() {
-      if (this.img === "") {
-        return (this.imgError = "Required");
+    validateUrl () {
+      if (this.img === '') {
+        return (this.imgError = 'Required')
       }
       if (!/^(https?):\/\/[^\s$.?#].[^\s]*$/.test(this.img)) {
-        return (this.imgError = "Not a valid Url");
+        return (this.imgError = 'Not a valid Url')
       }
-      return (this.imgError = "");
-    },
-  },
-});
+      return (this.imgError = '')
+    }
+  }
+})
 </script>
 
 <style scoped></style>

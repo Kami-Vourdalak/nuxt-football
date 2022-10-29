@@ -1,7 +1,7 @@
 <template>
   <div class="team" :data-cy="'team-card-' + dataCy">
     <div class="team-inner">
-      <img :src="imageSrc" :alt="teamName" />
+      <img :src="imageSrc" :alt="teamName">
       <div class="team-name">
         {{ teamName }}
       </div>
@@ -10,16 +10,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "TeamCard",
+  name: 'TeamCard',
   props: {
     teamId: { type: Number, required: true },
     teamName: { type: String, required: true },
     imageSrc: { type: String, required: true },
-    dataCy: { type: [String, Number], required: false, default: "" },
-  },
-});
+    dataCy: { type: [String, Number], required: false, default: '' }
+  }
+})
 </script>
 <style scoped>
 .team {

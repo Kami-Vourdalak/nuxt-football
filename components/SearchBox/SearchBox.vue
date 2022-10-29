@@ -1,36 +1,36 @@
 <template>
   <div class="search-box" :data-cy="'search-box-' + dataCy">
     <app-text-input
-      label="Search a team for it's name"
       v-model="searchText"
-      @keydown.enter="handleSearchClick"
+      label="Search a team for it's name"
       :data-cy="'search-box-' + dataCy"
+      @keydown.enter="handleSearchClick"
     />
-    <app-button @click="handleSearchClick" :data-cy="'search-box-' + dataCy">
+    <app-button :data-cy="'search-box-' + dataCy" @click="handleSearchClick">
       Go
     </app-button>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import AppTextInput from "@/components/AppTextInput/AppTextInput.vue";
-import AppButton from "~/components/app-button/AppButton.vue";
+import { defineComponent } from 'vue'
+import AppTextInput from '@/components/AppTextInput/AppTextInput.vue'
+import AppButton from '~/components/app-button/AppButton.vue'
 
 export default defineComponent({
-  name: "SearchBox",
+  name: 'SearchBox',
   components: { AppButton, AppTextInput },
+  props: { dataCy: { type: String, required: false, default: '' } },
   emits: { onSearch: String },
-  props: { dataCy: { type: String, required: false, default: "" } },
-  data() {
-    return { searchText: "" };
+  data () {
+    return { searchText: '' }
   },
   methods: {
-    handleSearchClick() {
-      this.$emit("onSearch", this.searchText);
-    },
-  },
-});
+    handleSearchClick () {
+      this.$emit('onSearch', this.searchText)
+    }
+  }
+})
 </script>
 <style scoped>
 .search-box {

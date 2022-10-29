@@ -19,7 +19,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -27,7 +27,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="-0.3308823529411765s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>
@@ -42,7 +42,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -50,7 +50,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="-0.2941176470588236s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>
@@ -65,7 +65,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -73,7 +73,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="-0.2573529411764706s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>
@@ -88,7 +88,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -96,7 +96,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="-0.22058823529411767s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>
@@ -111,7 +111,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -119,7 +119,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="-0.18382352941176475s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>
@@ -134,7 +134,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -142,7 +142,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="-0.1470588235294118s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>
@@ -157,7 +157,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -165,7 +165,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="-0.11029411764705883s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>
@@ -180,7 +180,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -188,7 +188,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="-0.0735294117647059s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>
@@ -203,7 +203,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -211,7 +211,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="-0.03676470588235295s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>
@@ -226,7 +226,7 @@
             keyTimes="0;1"
             dur="0.36764705882352944s"
             repeatCount="indefinite"
-          ></animateTransform>
+          />
           <animate
             attributeName="fill-opacity"
             keyTimes="0;1"
@@ -234,7 +234,7 @@
             repeatCount="indefinite"
             values="1;0"
             begin="0s"
-          ></animate>
+          />
         </circle>
       </g>
     </g>

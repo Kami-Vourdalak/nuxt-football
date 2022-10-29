@@ -1,34 +1,34 @@
 <template>
   <button
-      @click="handleClick"
-      :disabled="disabled"
-      class="app-button"
-      :class="{
+    :disabled="disabled"
+    class="app-button"
+    :class="{
       'app-button--disabled': disabled,
       'app-button--secondary': type === 'secondary',
     }"
-      :data-cy="'app-button-' + dataCy"
+    :data-cy="'app-button-' + dataCy"
+    @click="handleClick"
   >
     <slot />
   </button>
 </template>
 
 <script setup lang="ts">
-import { withDefaults } from "vue";
+import { withDefaults } from 'vue'
 interface Props {
-  type?: "primary" | "secondary";
+  type?: 'primary' | 'secondary';
   disabled?: boolean;
   dataCy?: string;
 }
 withDefaults(defineProps<Props>(), {
-  type: "primary",
+  type: 'primary',
   disabled: false,
-  dataCy: "",
-});
+  dataCy: ''
+})
 
-const emit = defineEmits<{ (e: "click"): void }>();
-function handleClick() {
-  emit("click");
+const emit = defineEmits<{(e: 'click'): void }>()
+function handleClick () {
+  emit('click')
 }
 </script>
 
