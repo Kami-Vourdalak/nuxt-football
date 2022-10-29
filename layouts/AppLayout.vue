@@ -6,12 +6,12 @@
 </template>
 
 <script lang="ts">
-import AppHeader from "@/layouts/AppHeader.vue";
+import AppHeader from '@/layouts/AppHeader.vue'
 
 export default defineComponent({
-  name: "AppLayout",
-  components: { AppHeader },
-});
+  name: 'AppLayout',
+  components: { AppHeader }
+})
 </script>
 
 <style>

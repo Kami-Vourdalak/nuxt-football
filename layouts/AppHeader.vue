@@ -4,11 +4,11 @@
       <h1>Teams Page!</h1>
     </router-link>
     <app-button
-        v-show="showAddButton"
-        class="app-header__add-button"
-        type="secondary"
-        @click="handleAddTeam"
-        data-cy="add-team"
+      v-show="showAddButton"
+      class="app-header__add-button"
+      type="secondary"
+      data-cy="add-team"
+      @click="handleAddTeam"
     >
       Add Team
     </app-button>
@@ -16,23 +16,23 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import AppButton from "@/components/app-button/AppButton.vue";
+import { defineComponent } from 'vue'
+import AppButton from '@/components/app-button/AppButton.vue'
 
 export default defineComponent({
-  name: "AppHeader",
+  name: 'AppHeader',
   components: { AppButton },
-  methods: {
-    handleAddTeam() {
-      this.$router.push("/add-team");
-    },
-  },
   computed: {
-    showAddButton() {
-      return this.$route.path !== "/add-team";
-    },
+    showAddButton () {
+      return this.$route.path !== '/add-team'
+    }
   },
-});
+  methods: {
+    handleAddTeam () {
+      this.$router.push('/add-team')
+    }
+  }
+})
 </script>
 
 <style>

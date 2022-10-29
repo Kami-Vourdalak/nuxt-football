@@ -1,13 +1,13 @@
 <template>
   <div>
     <app-layout>
-      <NuxtPage/>
+      <NuxtPage />
     </app-layout>
   </div>
 </template>
 <script>
 import AppLayout from './layouts/AppLayout'
 export default {
-  components: {AppLayout}
+  components: { AppLayout }
 }
 </script>
