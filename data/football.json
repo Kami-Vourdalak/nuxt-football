@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "Arsenal",
+        "logo": "https://logodownload.org/wp-content/uploads/2017/02/Arsenal-logo-escudo-shield-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Aston Villa",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Aston_Villa_FC_crest_%282016%29.svg/1200px-Aston_Villa_FC_crest_%282016%29.svg.png"
+    },
+    {
+        "id": 3,
+        "name": "Bournemouth",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/10/bournemouth-fc-logo-1.png"
+    },
+    {
+        "id": 4,
+        "name": "Brighton & Hove Albion",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/10/brighton-hove-albion-logo.png"
+    },
+    {
+        "id": 5,
+        "name": "Burnley",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/10/burnley-logo.png"
+    },
+    {
+        "id": 6,
+        "name": "Chelsea",
+        "logo": "https://logodownload.org/wp-content/uploads/2017/02/chelsea-fc-logo-escudo.png"
+    },
+    {
+        "id": 7,
+        "name": "Crystal Palace",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/05/crystal-palace-logo.png"
+    },
+    {
+        "id": 8,
+        "name": "Everton",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/04/everton-logo-escudo.png"
+    },
+    {
+        "id": 9,
+        "name": "Leeds United",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Leeds_United_F.C._logo.svg/1200px-Leeds_United_F.C._logo.svg.png"
+    },
+    {
+        "id": 10,
+        "name": "Leicester City",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/05/leicester-city-logo.png"
+    },
+    {
+        "id": 11,
+        "name": "Liverpool",
+        "logo": "https://logodownload.org/wp-content/uploads/2017/02/liverpool-fc-logo-escudo.png"
+    },
+    {
+        "id": 12,
+        "name": "Manchester City",
+        "logo": "https://logodownload.org/wp-content/uploads/2017/02/manchester-city-fc-logo-escudo-badge.png"
+    },
+    {
+        "id": 13,
+        "name": "Manchester United",
+        "logo": "https://w7.pngwing.com/pngs/721/828/png-transparent-manchester-united-f-c-old-trafford-fa-cup-football-football-emblem-label-sport.png"
+    },
+    {
+        "id": 14,
+        "name": "Newcastle United",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/10/newcastle-united-logo.png"
+    },
+    {
+        "id": 15,
+        "name": "Norwitch City",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/10/norwich-fc-logo.png"
+    },
+    {
+        "id": 16,
+        "name": "Southampton",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/10/southampton-fc-logo.png"
+    },
+    {
+        "id": 17,
+        "name": "Tottenham Hotspur",
+        "logo": "https://logodownload.org/wp-content/uploads/2018/11/tottenham-logo-escudo-2624x6500.png"
+    },
+    {
+        "id": 18,
+        "name": "Watford",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/05/watford-logo.png"
+    },
+    {
+        "id": 19,
+        "name": "West Ham United",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/05/west-ham-united-logo.png"
+    },
+    {
+        "id": 20,
+        "name": "Wolverhampton",
+        "logo": "https://logodownload.org/wp-content/uploads/2019/04/wolverhampton-logo-escudo.png"
+    }
+]
