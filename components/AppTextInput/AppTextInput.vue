@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, withDefaults, ref } from 'vue'
+import { withDefaults, ref } from 'vue'
 
 interface Props {
   label: string;
