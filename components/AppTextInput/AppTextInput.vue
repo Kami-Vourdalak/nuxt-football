@@ -1,19 +1,19 @@
 <template>
-  <div class="app-text-input" :data-cy="'app-text-input-' + dataCy">
+  <div class="w-full h-24 relative" :data-cy="'app-text-input-' + dataCy">
     <label for="id" :data-cy="'app-text-input-label-' + dataCy">
       {{ label }}
     </label>
     <input
       :id="id"
       type="text"
-      class="app-text-input__input"
+      class="p-3 rounded-md w-full border-neutral-300 border"
       :value="modelValue"
       :data-cy="'app-text-input-input-' + dataCy"
       @input="emit('update:modelValue', $event.target.value)"
     >
     <span
       v-if="error"
-      class="app-text-input__error"
+      class="absolute text-red-600 text-xs bottom-1 left-0"
       :data-cy="'app-text-input-error-' + dataCy"
     >
       {{ error }}
@@ -37,22 +37,3 @@ withDefaults(defineProps<Props>(), {
 const id = ref(1)
 const emit = defineEmits<{(e: 'update:modelValue'): string }>()
 </script>
-<style scoped>
-.app-text-input {
-  width: 100%;
-  height: 4.5rem;
-  position: relative;
-}
-.app-text-input__input {
-  padding: 0.5rem;
-  border-radius: 0.375rem;
-  width: 100%;
-}
-.app-text-input__error {
-  position: absolute;
-  color: red;
-  font-size: 11px;
-  bottom: 0.25rem;
-  left: 0;
-}
-</style>

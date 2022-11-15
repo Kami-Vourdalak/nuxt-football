@@ -1,8 +1,8 @@
 <template>
-  <div class="team" :data-cy="'team-card-' + dataCy">
-    <div class="team-inner">
-      <img :src="imageSrc" :alt="teamName">
-      <div class="team-name">
+  <div class="flex items-center justify-center mb-6 cursor-pointer" :data-cy="'team-card-' + dataCy">
+    <div class="relative mx-2.5">
+      <img :src="imageSrc" :alt="teamName" class="w-64 h-64 object-contain">
+      <div class="py-5 px-2.5 bg-black opacity-80 text-white absolute bottom-0 left-0 w-full">
         {{ teamName }}
       </div>
     </div>
@@ -21,33 +21,3 @@ export default defineComponent({
   }
 })
 </script>
-<style scoped>
-.team {
-  margin-bottom: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team-inner {
-  position: relative;
-  margin: 0 10px;
-}
-
-.team-inner .team-name {
-  padding: 20px 10px;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.team img {
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
-}
-</style>

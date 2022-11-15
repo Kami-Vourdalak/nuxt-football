@@ -1,10 +1,10 @@
 <template>
   <button
     :disabled="disabled"
-    class="app-button"
+    class="p-2 rounded bg-green-200"
     :class="{
-      'app-button--disabled': disabled,
-      'app-button--secondary': type === 'secondary',
+      'cursor-not-allowed bg-gray-100': disabled,
+      'bg-red-200': type === 'secondary',
     }"
     :data-cy="'app-button-' + dataCy"
     @click="handleClick"
@@ -31,20 +31,3 @@ function handleClick () {
   emit('click')
 }
 </script>
-
-<style scoped>
-.app-button {
-  cursor: pointer;
-  padding: 0.5rem;
-  background-color: #bbffbb;
-  border-radius: 0.25rem;
-  height: 2.25rem;
-}
-.app-button--secondary {
-  background-color: #ffbbbb;
-}
-.app-button--disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
-}
-</style>

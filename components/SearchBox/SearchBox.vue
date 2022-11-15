@@ -1,5 +1,5 @@
 <template>
-  <div class="search-box" :data-cy="'search-box-' + dataCy">
+  <div class="flex items-center w-full" :data-cy="'search-box-' + dataCy">
     <app-text-input
       v-model="searchText"
       label="Search a team for it's name"
@@ -32,10 +32,3 @@ export default defineComponent({
   }
 })
 </script>
-<style scoped>
-.search-box {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-</style>
