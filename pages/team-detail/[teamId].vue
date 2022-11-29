@@ -2,12 +2,12 @@
   <div v-if="!team.name">
     Team not found!
   </div>
-  <div v-else class="team-detail">
+  <div v-else class="flex flex-col">
     <h2>{{ team.name }}</h2>
     <div>
       <img :src="team.img" :alt="team.name">
     </div>
-    <div v-if="isEditing" class="team-detail__form">
+    <div v-if="isEditing" class="self-start w-4/5">
       <app-button type="secondary" data-cy="cancel-edit" @click="handleCancel">
         Cancel
       </app-button>
@@ -19,7 +19,7 @@
     </div>
     <app-button
       v-else
-      class="team-detail__edit-button"
+      class="self-start"
       data-cy="edit-team"
       @click="handleEditClick"
     >
@@ -84,17 +84,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style scoped>
-.team-detail {
-  display: flex;
-  flex-direction: column;
-}
-.team-detail__form {
-  align-self: flex-start;
-  width: 80%;
-}
-.team-detail__edit-button {
-  align-self: flex-start;
-}
-</style>

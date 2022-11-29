@@ -1,8 +1,10 @@
 <template>
-  <app-header />
-  <main class="p-8">
-    <slot />
-  </main>
+  <div>
+    <app-header />
+    <main class="p-8">
+      <slot />
+    </main>
+  </div>
 </template>
 
 <script lang="ts">

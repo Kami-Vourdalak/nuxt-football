@@ -1,5 +1,5 @@
 <template>
-  <div class="add-team">
+  <div class="w-4/5">
     <h2>Add Team</h2>
     <p>You can add a team by filling the form</p>
     <team-form data-cy="add" @onSave="saveTeam" />
@@ -33,9 +33,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style scoped>
-.add-team {
-  width: 80%;
-}
-</style>

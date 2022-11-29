@@ -9,7 +9,7 @@
       class="p-3 rounded-md w-full border-neutral-300 border"
       :value="modelValue"
       :data-cy="'app-text-input-input-' + dataCy"
-      @input="emit('update:modelValue', $event.target.value)"
+      @input="emitInput"
     >
     <span
       v-if="error"
@@ -34,6 +34,8 @@ withDefaults(defineProps<Props>(), {
   error: '',
   dataCy: ''
 })
-const id = ref(1)
-const emit = defineEmits<{(e: 'update:modelValue'): string }>()
+const id = ref('1')
+const emit = defineEmits<{(e: 'update:modelValue', value: string): string }>()
+
+const emitInput = (event: Event) => emit('update:modelValue', (event.target as HTMLInputElement).value)
 </script>

@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="mx-auto my-0">
     <search-box data-cy="teams-search" @onSearch="filterTeams" />
     <app-loader v-if="isLoading" />
-    <div class="teams">
+    <div class="grid grid-cols-1 w-full mt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
       <p v-if="!isLoading && filteredTeams.length === 0" data-cy="no-teams-found">
         No teams found :(
       </p>
@@ -16,12 +16,12 @@
         @click="handleTeamCardClick(team.id)"
       />
     </div>
-    <div class="paginator">
+    <div class="flex gap-12 justify-center">
       <div
         v-for="page in teamPages"
         :key="page"
-        class="paginator__page"
-        :class="{ 'paginator__page--active': page === teamsPage }"
+        class="border border-green-300 rounded-xl py-3 px-4 cursor-pointer"
+        :class="{ 'bg-green-300': page === teamsPage }"
         :data-cy="'page-' + page"
         @click="handlePageChange(page)"
       >
@@ -74,7 +74,6 @@ export default defineComponent({
   },
   methods: {
     getTeams () {
-      console.log('this.searchText', this.searchText)
       TeamsClient.getTeams({
         page: this.teamsPage,
         limit: this.teamsLimit,
@@ -103,55 +102,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style scoped>
-.container {
-  margin: 0 auto;
-}
-
-.teams {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.teams:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.paginator {
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-}
-
-.paginator__page {
-  border: 1px solid #bbffbb;
-  border-radius: 1rem;
-  padding: 0.75rem 1rem;
-  cursor: pointer;
-}
-
-.paginator__page--active {
-  background-color: #bbffbb;
-}
-
-@media (min-width: 1280px) {
-  .teams {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 890px) and (max-width: 1279px) {
-  .teams {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 630px) and (max-width: 889px) {
-  .teams {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-</style>
