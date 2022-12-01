@@ -1,82 +1,82 @@
 [
     {
         "name": "Arsenal",
-        "img": "https://images.getinconvo-dev.com/dev/arsenal.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2017/02/Arsenal-logo-escudo-shield-1.png"
     },
     {
         "name": "Aston Villa",
-        "img": "https://images.getinconvo-dev.com/dev/aston.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Aston_Villa_FC_crest_%282016%29.svg/1200px-Aston_Villa_FC_crest_%282016%29.svg.png"
     },
     {
         "name": "Bournemouth",
-        "img": "https://images.getinconvo-dev.com/dev/bournemouth.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/10/bournemouth-fc-logo-1.png"
     },
     {
         "name": "Brighton & Hove Albion",
-        "img": "https://images.getinconvo-dev.com/dev/brighton.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/10/brighton-hove-albion-logo.png"
     },
     {
         "name": "Burnley",
-        "img": "https://images.getinconvo-dev.com/dev/burnley.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/10/burnley-logo.png"
     },
     {
         "name": "Chelsea",
-        "img": "https://images.getinconvo-dev.com/dev/chelsea.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2017/02/chelsea-fc-logo-escudo.png"
     },
     {
         "name": "Crystal Palace",
-        "img": "https://images.getinconvo-dev.com/dev/crystal.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/05/crystal-palace-logo.png"
     },
     {
         "name": "Everton",
-        "img": "https://images.getinconvo-dev.com/dev/everton.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/04/everton-logo-escudo.png"
     },
     {
         "name": "Leeds United",
-        "img": "https://images.getinconvo-dev.com/dev/leeds.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Leeds_United_F.C._logo.svg/1200px-Leeds_United_F.C._logo.svg.png"
     },
     {
         "name": "Leicester City",
-        "img": "https://images.getinconvo-dev.com/dev/leicester.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/05/leicester-city-logo.png"
     },
     {
         "name": "Liverpool",
-        "img": "https://images.getinconvo-dev.com/dev/liverpool.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2017/02/liverpool-fc-logo-escudo.png"
     },
     {
         "name": "Manchester City",
-        "img": "https://images.getinconvo-dev.com/dev/mancity.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2017/02/manchester-city-fc-logo-escudo-badge.png"
     },
     {
         "name": "Manchester United",
-        "img": "https://images.getinconvo-dev.com/dev/manunited.jpg"
+        "img": "https://w7.pngwing.com/pngs/721/828/png-transparent-manchester-united-f-c-old-trafford-fa-cup-football-football-emblem-label-sport.png"
     },
     {
         "name": "Newcastle United",
-        "img": "https://images.getinconvo-dev.com/dev/newcastle.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/10/newcastle-united-logo.png"
     },
     {
         "name": "Norwitch City",
-        "img": "https://images.getinconvo-dev.com/dev/norwitch.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/10/norwich-fc-logo.png"
     },
     {
         "name": "Southampton",
-        "img": "https://images.getinconvo-dev.com/dev/southampton.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/10/southampton-fc-logo.png"
     },
     {
         "name": "Tottenham Hotspur",
-        "img": "https://images.getinconvo-dev.com/dev/tottenham.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2018/11/tottenham-logo-escudo-2624x6500.png"
     },
     {
         "name": "Watford",
-        "img": "https://images.getinconvo-dev.com/dev/watford.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/05/watford-logo.png"
     },
     {
         "name": "West Ham United",
-        "img": "https://images.getinconvo-dev.com/dev/westham.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/05/west-ham-united-logo.png"
     },
     {
         "name": "Wolverhampton",
-        "img": "https://images.getinconvo-dev.com/dev/wolves.jpg"
+        "img": "https://logodownload.org/wp-content/uploads/2019/04/wolverhampton-logo-escudo.png"
     }
 ]

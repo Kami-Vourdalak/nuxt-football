@@ -15,9 +15,8 @@ export const getTeams = async (request: Request, response: Response): Promise<vo
 
         const offset = (limit * (page - 1))
         if (Number.isNaN(offset)) throw new Error(Messages.invalidQueryParams)
-        console.log(filter, limit, offset);
 
-        const teams: Team[] = await repository.all<Team[]>('SELECT * FROM teams WHERE name LIKE ? LIMIT ? OFFSET ?', `%${filter}%`, limit, offset);
+        const teams: Team[] = await repository.all<Team[]>('SELECT * FROM teams WHERE name LIKE ? ORDER BY name LIMIT ? OFFSET ?', `%${filter}%`, limit, offset);
         // less efficient
         const { total } = await repository.get('SELECT COUNT(*) AS total FROM teams WHERE name LIKE ?', [`%${filter}%`]);
 

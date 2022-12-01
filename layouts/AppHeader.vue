@@ -1,7 +1,9 @@
 <template>
   <header class="flex items-center justify-between w-full bg-green-200 p-6 h-24">
     <nuxt-link class="flex items-center gap-2" to="/">
-      <h1>Teams Page!</h1>
+      <h1 class="text-lg">
+        Teams Page!
+      </h1>
     </nuxt-link>
     <app-button
       v-show="showAddButton"

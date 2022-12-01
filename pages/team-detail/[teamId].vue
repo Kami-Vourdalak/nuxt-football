@@ -4,9 +4,7 @@
   </div>
   <div v-else class="flex flex-col">
     <h2>{{ team.name }}</h2>
-    <div>
-      <img :src="team.img" :alt="team.name">
-    </div>
+    <img class="self-center w-9/12 sm:w-1/2 md:w-1/3 lg:w-2/5" :src="team.img" :alt="team.name">
     <div v-if="isEditing" class="self-start w-4/5">
       <app-button type="secondary" data-cy="cancel-edit" @click="handleCancel">
         Cancel

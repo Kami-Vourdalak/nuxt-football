@@ -20,7 +20,7 @@
       <div
         v-for="page in teamPages"
         :key="page"
-        class="border border-green-300 rounded-xl py-3 px-4 cursor-pointer"
+        class="border border-green-300 rounded-xl py-3 px-5 cursor-pointer"
         :class="{ 'bg-green-300': page === teamsPage }"
         :data-cy="'page-' + page"
         @click="handlePageChange(page)"
@@ -62,7 +62,7 @@ export default defineComponent({
   },
   mounted () {
     // this.isLoading = true;
-    if (this.$config.VUE_APP_USE_API !== 'true') {
+    if (this.$config.VUE_APP_USE_API === 'true') {
       this.getTeams()
     } else {
       import('~/data/football.json').then((_teams) => {
@@ -93,6 +93,7 @@ export default defineComponent({
     },
     filterTeams (searchText: string) {
       this.searchText = searchText
+      this.teamsPage = 1
       this.getTeams()
     },
     handlePageChange (page: number) {
