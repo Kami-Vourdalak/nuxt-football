@@ -62,7 +62,7 @@ export default defineComponent({
   },
   mounted () {
     // this.isLoading = true;
-    if (process?.env?.VUE_APP_USE_API === 'true') {
+    if (this.$config.VUE_APP_USE_API !== 'true') {
       this.getTeams()
     } else {
       import('~/data/football.json').then((_teams) => {

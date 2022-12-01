@@ -50,7 +50,7 @@ export default defineComponent({
     }
   },
   mounted () {
-    if (process?.env?.VUE_APP_USE_API === 'true') {
+    if (this.$config.VUE_APP_USE_API === 'true') {
       TeamsClient.getTeam(this.teamId)
         .then((teamFound) => {
           this.team = teamFound
