@@ -1,0 +1,177 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Teams Express API",
+    "description": "This is a simple CRUD API application made with Express and documented with Swagger",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Teams",
+      "description": "API for Teams"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/teams": {
+      "get": {
+        "tags": ["Teams"],
+        "summary": "Get all Teams in db",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "page",
+            "type": "number"
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "type": "number"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Teams"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": ["Teams"],
+        "summary": "Create new Team",
+        "parameters": [
+          {
+            "name": "team",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/Team"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TeamCreatedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/TeamError"
+            }
+          }
+        }
+      }
+    },
+    "/teams/{id}": {
+      "get": {
+        "tags": ["Teams"],
+        "summary": "Get Team by id in db",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Team"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": ["Teams"],
+        "summary": "Update Team in db",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "team",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/Team"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Team"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/TeamError"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Team": {
+      "required": ["id", "name", "logo"],
+      "properties": {
+        "id": {
+          "type": "number",
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        }
+      }
+    },
+    "Teams": {
+      "properties": {
+        "total": {
+          "type": "number"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Team"
+          }
+        }
+      }
+    },
+    "TeamCreatedResponse": {
+      "properties": {
+        "id": {
+          "type": "number"
+        }
+      }
+    },
+    "TeamError": {
+      "properties": {
+        "error": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

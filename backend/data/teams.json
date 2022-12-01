@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Arsenal",
+        "img": "https://images.getinconvo-dev.com/dev/arsenal.jpg"
+    },
+    {
+        "name": "Aston Villa",
+        "img": "https://images.getinconvo-dev.com/dev/aston.jpg"
+    },
+    {
+        "name": "Bournemouth",
+        "img": "https://images.getinconvo-dev.com/dev/bournemouth.jpg"
+    },
+    {
+        "name": "Brighton & Hove Albion",
+        "img": "https://images.getinconvo-dev.com/dev/brighton.jpg"
+    },
+    {
+        "name": "Burnley",
+        "img": "https://images.getinconvo-dev.com/dev/burnley.jpg"
+    },
+    {
+        "name": "Chelsea",
+        "img": "https://images.getinconvo-dev.com/dev/chelsea.jpg"
+    },
+    {
+        "name": "Crystal Palace",
+        "img": "https://images.getinconvo-dev.com/dev/crystal.jpg"
+    },
+    {
+        "name": "Everton",
+        "img": "https://images.getinconvo-dev.com/dev/everton.jpg"
+    },
+    {
+        "name": "Leeds United",
+        "img": "https://images.getinconvo-dev.com/dev/leeds.jpg"
+    },
+    {
+        "name": "Leicester City",
+        "img": "https://images.getinconvo-dev.com/dev/leicester.jpg"
+    },
+    {
+        "name": "Liverpool",
+        "img": "https://images.getinconvo-dev.com/dev/liverpool.jpg"
+    },
+    {
+        "name": "Manchester City",
+        "img": "https://images.getinconvo-dev.com/dev/mancity.jpg"
+    },
+    {
+        "name": "Manchester United",
+        "img": "https://images.getinconvo-dev.com/dev/manunited.jpg"
+    },
+    {
+        "name": "Newcastle United",
+        "img": "https://images.getinconvo-dev.com/dev/newcastle.jpg"
+    },
+    {
+        "name": "Norwitch City",
+        "img": "https://images.getinconvo-dev.com/dev/norwitch.jpg"
+    },
+    {
+        "name": "Southampton",
+        "img": "https://images.getinconvo-dev.com/dev/southampton.jpg"
+    },
+    {
+        "name": "Tottenham Hotspur",
+        "img": "https://images.getinconvo-dev.com/dev/tottenham.jpg"
+    },
+    {
+        "name": "Watford",
+        "img": "https://images.getinconvo-dev.com/dev/watford.jpg"
+    },
+    {
+        "name": "West Ham United",
+        "img": "https://images.getinconvo-dev.com/dev/westham.jpg"
+    },
+    {
+        "name": "Wolverhampton",
+        "img": "https://images.getinconvo-dev.com/dev/wolves.jpg"
+    }
+]
